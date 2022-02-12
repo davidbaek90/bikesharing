@@ -6,36 +6,55 @@
 
 #### The purpose of this analysis is to generate a convincing visualization presentable to the investors of a bike-sharing program in Des Moines. The story in the presentation will help pursuade the key stakeholdesrs that NYC Citi Bike program will be a successful project, making it an excellent investment candidate.
 
-## Analysis and Challenges
-
-### Analysis of Outcomes Based on Launch Date
-
-#### The first analysis of outcomes was based on launch date of campaigns by using pivot table. With the use of pivot table, only theater campains were selected based on launch months and total number of corresponding campaign results was visualized. Below illustration shows the theater outcomes based on launch date. Link to the spreadsheet containing the datasets is as below:
-
-https://github.com/davidbaek90/kickstarter-analysis/raw/main/Kickstarter_Challenge.zip
-
-![Theater_Outcomes_vs_Launch](https://raw.githubusercontent.com/davidbaek90/kickstarter-analysis/main/resources/Theater_Outcomes_vs_Launch.png)
-
-### Analysis of Outcomes Based on Goals
-
-#### The second analysis of outcomes is the outcome in percentage, based on campaign goals. For this analysis, line graph is used to visualize the relationship between the two inputs.
-
-![Outcomes_vs_Goals](https://raw.githubusercontent.com/davidbaek90/kickstarter-analysis/main/resources/Outcomes_vs_Goals.png)
-
-### Challenges and Difficulties Encountered
-
-#### The most prominent challenge that I encountered during creation of the pivot table. Without following the module instructions I would have easily made mistakes by mixing up placing correct parameters in the pivot table fields. Another mistake that could be made is switching the row and column data on the line graph.
-
 ## Results
 
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
-  - The first conclusion is that the total number of failed campaigns in the theater catogory remained relative consistant. Second conclusion is that the most successful theatrical campaigns launched in May, and campaigns were generally successful in the warmer months.
+### Link to the Bikesharing Module and Challenge Visualization
 
-- What can you conclude about the Outcomes based on Goals?
-  - Generally speaking, less ambitious campaigns tend to be most successful. Risk of not succeeding in the campaigns increase as amount of goal increases. Goals in the 35000 to 39999 and 40000 to 44999 range peaked, however the number of campaigns in this range is not sufficient enough to be accounted into the conclusion.
+#### Below link will open new windows showing complete story of the Bikesharing Challange and Module visualization
+[Link to Bikesharing Challenge Visualization](https://public.tableau.com/app/profile/david.baek/viz/Bikesharing_Challenge_16446949472070/Story1?publish=yes)
+</br>[Link to Bikesharing Visualization from Module](https://public.tableau.com/app/profile/david.baek/viz/Book1_16446432887290/Story1?publish=yes)
 
-- What are some limitations of this dataset?
-  - The number of calcelled data in the "Theatre Outcomes Based on Launch Date" is missing from the dataset, which could potentialliy impact the trend especially during the month of October where both successful and failed number of campains tend to peak locally. For the "Outcomes Based on Goals", the duration of the campaign (end date minus start date) is not consistant. Longer campaigns might be more successful because it can prolong the campaign long enough to raise close to the goal. Hence, it is not the most fair method to compare the success between the campaigns.
+<p align="center">
+<b>Checkout Times for Users</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/1.PNG">
+    </br>- Most of the NYC Citi Bike users checked out for 20 minutes or less. Peak checkout time is 5 minutes.
+</p>
 
-- What are some other possible tables and/or graphs that we could create?
-  - We could create a pie graph to show a pattern of demographic outcome based on location. This way we could possible conclude certain countries might show successful campaign results compared to another. We could also reinfor our previous graphs with histogram that shows a rate of success based on the duration of the campaign held. This way we could look at multiple other variables that impacts the success of the campaigns.
+<p align="center">
+<b>Checkout Times by Gender</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/2.PNG">
+    </br>- Male population had almost triple amount of trip duration compared to female. with about 5% of the survey data did not specify gender
+</p>
+
+<p align="center">
+<b>Trips by Weekday per Hour</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/3.PNG">
+    </br>- During the week, peak hours were around 8AM and 5:30PM where rush hours traffic is present. On weekdays, more dispersed bike usage throughout 10AM to 5PM is observed.
+</p>
+
+<p align="center">
+<b>Trips by Gender (Weekday per Hour)</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/4.PNG">
+    </br>- Male users took advantage of the Citi Bike program much more than female users. Time and day of the week pattern is similar for both and similar to the "Trips by Weekday per Hour shown in previous story".
+</p>
+
+<p align="center">
+<b>User Trips by Gender Weekday</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/5.PNG">
+    </br>- The heatmap of user trips by gender throughout the week shows that male subscribers are dominant users. Their highest usage showing on Monday to Tuesday, and Thursday to Friday. Female subscribers show a similar patter but to a reduced amount.
+</p>
+
+<p align="center">
+<b>Customers vs Subscribers</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/6.PNG">
+    </br>- Number of subscribers is roughly more than three times compared ot the number of non-subscribed customers
+</p>
+
+<p align="center">
+<b>Top Starting vs Ending Locations</b></br>
+    <img src="https://raw.githubusercontent.com/davidbaek90/bikesharing/main/image/7.PNG">
+    </br>- During the week, peak hours were around 8AM and 5:30PM where rush hours traffic is present. On weekdays, more dispersed bike usage throughout 10AM to 5PM is observed.
+
+## Summary
+- The evidence of bike sharing data show a popular demand throughout the city. We have gathered the data and put it to a visualization to show a bikesharing platform usage based on time of the day, day of the week, usage by gender, by subscribers and locations of pickup/dropoff. In general, we see a high demand of bike sharing for short trip duration (less than 30 minutes), this demand is vastly derived from male subscribers. On the weekdays rush hour timing is shown a high demand and weekend through the morning and afternoon. Majority of the bikes picked are returned to the same location.
+- In order to better understand the repair service requirement, I high recommend visualizing a correlationship between individual bike utilization and repair frequency. To help reduce downtime of bike availaibility. Second visualization that can help would be to map out a visualization of highly concentrated bike pickup locations, so that we can focus on supplying sufficient number of bikes at thos target locations.
